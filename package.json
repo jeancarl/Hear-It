@@ -1,0 +1,11 @@
+{
+  "name": "hear-it",
+  "description": "Hear It game for Node.js",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "*",
+    "url": "*",
+    "watson-developer-cloud": "*"
+  }
+}

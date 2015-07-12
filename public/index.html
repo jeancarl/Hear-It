@@ -1,0 +1,22 @@
+<!-- Filename: public/index.html -->
+<html ng-app="HearItApp">
+  <head>
+    <title>Hear It</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+    <script src="hearit.js"></script>
+  </head>
+  <body ng-controller="HearItCtrl" style="font-family:Arial">
+    <div style="float:right">
+      Score: {{score}}
+      <audio controls preload="auto" id="audio">
+        <source id="wavsource" type="audio/wav">
+      </audio>
+    </div>
+
+    <h2>Hear It</h2>
+
+    <div style="clear:both">
+      <div style="float:left; width:250px; height:75px; border:1px solid black; text-align:center;font-size:36pt" ng-repeat="word in wordSet" ng-click="checkAnswer(word)">{{word}}</div>
+    </div>
+  </body>
+</html>
